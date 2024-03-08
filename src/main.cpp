@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
     app.AddScene(new Canis::Scene("game_of_life", "assets/scenes/game_of_life.scene"));
     app.AddScene(new Canis::Scene("3d_demo", "assets/scenes/3d_demo.scene"));
 
-    app.Run("Canis Demos", "3d_demo");
+    app.Run("Canis Demos", "sprite_demo");
 
     return 0;
 }
