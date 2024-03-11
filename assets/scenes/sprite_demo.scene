@@ -87,4 +87,5 @@ Entities:
       layer: 0
       mask: 0
     Canis::ScriptComponent: Paddle
+    Canis::TagComponent: LEFT_PADDEL
     

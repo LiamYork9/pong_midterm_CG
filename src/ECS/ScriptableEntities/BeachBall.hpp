@@ -32,6 +32,12 @@ public:
 
     void OnUpdate(float _dt)
     {
+        using namespace Canis;
+        Entity leftPaddel = entity.GetEntityWithTag("LEFT_PADDEL");
+        auto& rectLeftPaddle = leftPaddel.GetComponent<RectTransformComponent>();
+        auto& colorLeftPaddle = leftPaddel.GetComponent<ColorComponent>();
+        Log(std::to_string(rectLeftPaddle.position.y));
+
         auto& rect = GetComponent<Canis::RectTransformComponent>();
 
         float halfSizeX = rect.size.x/2.0f;
