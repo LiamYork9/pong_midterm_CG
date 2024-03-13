@@ -11,8 +11,10 @@ in vec2 fragmentUV;
 out vec4 color;
 
 uniform sampler2D mySampler;
+uniform float TIME;
 
 void main() {
+	vec2 movedUV = fragmentUV + vec2(TIME, TIME);
 	vec4 textureColor = texture(mySampler, fragmentUV);
 
 	//color = textureColor * fragmentColor;
