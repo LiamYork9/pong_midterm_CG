@@ -17,5 +17,14 @@ void main() {
 
 	//color = textureColor * fragmentColor;
 
+	if (textureColor == vec4(1.0, 1.0, 1.0, 1.0))
+	{
+		 
+	}
+	else
+	{
+		 
+	}
+
 	color = fragmentColor * textureColor;
 }
